@@ -1,0 +1,22 @@
+.body{
+    
+    display:flex;
+}
+.frontScreenContainer{
+    margin-left: 10%;
+    margin-right: 10%;
+    display: inline-flex;
+    column-count: 2;
+    column-gap: 10px;
+}
+
+.picContainer{
+    height: 80vh;
+    overflow: hidden;
+}
+
+.aboutMe{
+    height: 80vh;
+    overflow: hidden;
+}
+
