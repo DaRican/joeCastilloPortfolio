@@ -1,22 +1,30 @@
 .body{
-    
+    margin: 0;
+    padding: 0;
+    height: 100%; 
     display:flex;
 }
 .frontScreenContainer{
-    margin-left: 10%;
+    margin-left:24%;
     margin-right: 10%;
     display: inline-flex;
     column-count: 2;
     column-gap: 10px;
+    width: 960px;
+    border:1px solid black;
 }
 
 .picContainer{
-    height: 80vh;
+    height: 70vh;
     overflow: hidden;
 }
 
 .aboutMe{
     height: 80vh;
+    width: 75%;
+    float: right;
     overflow: hidden;
+    color: white;
+    background-color: black;
 }
 
