@@ -1,0 +1,191 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+
+}
+.projectContainer
+{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 1000px;
+    height: 500px;
+    display: flex;
+}
+.projectContainer .box
+{
+    position: relative;
+    width: 250px;
+    height: 500px;
+    background: #ccc;
+    transition: 0.5s;
+}
+.projectContainer .box:hover
+{
+    transform: scale(1.1);
+    z-index: 1;
+    box-shadow: 0 5px 20px rgba(0,0,0,1);
+}
+
+.projectContainer .box .thumb
+{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+.projectContainer .box:nth-child(odd) .thumb
+{
+    bottom: 0;
+    left: 0;
+}
+
+.projectContainer .box:nth-child(even) .details
+{
+    bottom: 0;
+    left: 0;
+}
+
+.projectContainer .box:nth-child(1) .details
+{
+    background: red;
+}
+
+.projectContainer .box:nth-child(2) .details
+{
+    background: green;
+}
+.projectContainer .box:nth-child(3) .details
+{
+    background: blue
+}
+.projectContainer .box:nth-child(4) .details
+{
+    background: yellow;
+}
+.projectContainer .box:nth-child(5) .details
+{
+    background: purple;
+}
+.projectContainer .box:nth-child(6) .details
+{
+    background: lightblue;
+}
+
+
+
+.projectContainer .box .thumb img
+{
+    width: 100%;
+
+}
+
+.projectContainer .box .details
+{
+    position: absolute;
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+    background: #262626;
+}
+
+.projectContainer .box .details .content
+{
+    position: absolute;
+    top: calc(50% + 16px);
+    transform: translateY(-50%);
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    transition: 0.5s
+}
+.projectContainer .box:hover .details .content
+{
+    top: calc(50%);
+}
+.projectContainer .box .details .content .fa
+{
+    font-size: 80px;
+    color: #fff;
+}
+.projectContainer .box .details .content .box .h3 
+{
+    margin: 0;
+    padding: 0;
+    padding: 10px 0;
+    color: #fff;
+}
+.projectContainer .box .details .content a
+{
+    display: inline-block;
+    padding: 5px 20px;
+    color: #fff;
+    border: 2px solid #fff;
+    text-decoration: none;
+    transition: 0.5s;
+    border-radius: 20px;
+    transform: scale(0);
+    
+}
+.projectContainer .box:hover .details .content a
+{
+    transform: scale(1);
+}
+
+.projectContainer .box .details .content a:hover
+{
+    background: #fff;
+    color: black;
+}
+
+@media (max-width: 1000px)
+{
+    .projectContainer
+    {
+       width: 100%;
+       height: auto;
+       padding: 20px;
+       box-sizing: border-box; 
+    }
+    .projectContainer .box
+    {
+        height: 250px;
+    }
+    .projectContainer .box .thumb
+    {
+        display: none;
+    }
+}
+
+@media (max-width: 768px)
+{
+    .projectContainer
+    {
+       display: initial;
+    }
+    .projectContainer .box 
+    {
+        width: 50%;
+        height: 250px;
+        float: left;
+    }
+}
+@media (max-width: 480px)
+{
+    .projectContainer
+    {
+       top: 0;
+       left: 0;
+       transform: translate(0);
+    }
+    .projectContainer .box 
+    {
+        width: 100%;
+        height: 250px;
+        float: none;
+    }
+}

@@ -2,19 +2,20 @@
     margin: 0;
     padding: 0;
     
-    display:flex;
+    display:initial;
 }
 .frontScreenContainer{
-    margin: 0 auto;
-    width: 65%;
+    position: relative;
+    width: 1000px;
+    height: 500px;
     display: flex;
     
 }
 
 .picContainer{
-   
-    width: 35%;
+    position: relative;
     height: 70vh;
+    width: 50%;
     overflow: hidden;
 }
 
@@ -22,16 +23,19 @@
     
     height: 70vh;
     line-height: 70vh;
-    width: 65%;
-    float: right;
-    position: sticky;
+    width: 50%;
     overflow: hidden;
     color: white;
     text-align: center;
     background-color: black;
 }
-
-.projects{
+.aboutMe p
+{
+    word-wrap: break-word;
+    width: 50%;
+}
+.projects
+{
     padding: 5%;
     margin: 10 auto;
     padding: 0;
@@ -39,7 +43,52 @@
     height: 35%;
     vertical-align: middle;
     background-color: black;
-
-
 }
+
+
+@media (max-width: 768px)
+{
+    .picContainer
+    {
+       display: initial;    
+        width: 50%;
+        height: 250px;
+        float: left;
+    }
+    .aboutMe
+    {
+       display: initial;    
+        width: 50%;
+        height: 250px;
+        float: left;
+    }
+}
+@media (max-width: 480px)
+{
+    .picContainer
+    {
+       top: 0;
+       left: 0;
+       transform: translate(0);
+    }
+    .picContainer
+    {
+        width: 100%;
+        height: 250px;
+        float: none;
+    }
+    .aboutMe
+    {
+       top: 0;
+       left: 0;
+       transform: translate(0);
+    }
+    .aboutMe
+    {
+        width: 100%;
+        height: 250px;
+        float: none;
+    }
+}
+
 
