@@ -14,6 +14,7 @@ body
     width: 1000px;
     height: 500px;
     display: flex;
+    
 }
 .projectContainer .box
 {
@@ -22,6 +23,7 @@ body
     height: 500px;
     background: #ccc;
     transition: 0.5s;
+    color: white;
 }
 .projectContainer .box:hover
 {
@@ -51,28 +53,28 @@ body
 
 .projectContainer .box:nth-child(1) .details
 {
-    background: red;
+    background: rgb(14, 16, 131);
 }
 
 .projectContainer .box:nth-child(2) .details
 {
-    background: green;
+    background: rgb(14, 16, 131);
 }
 .projectContainer .box:nth-child(3) .details
 {
-    background: blue
+    background: rgb(14, 16, 131);
 }
 .projectContainer .box:nth-child(4) .details
 {
-    background: yellow;
+    background: rgb(14, 16, 131);
 }
 .projectContainer .box:nth-child(5) .details
 {
-    background: purple;
+    background: rgb(14, 16, 131);
 }
 .projectContainer .box:nth-child(6) .details
 {
-    background: lightblue;
+    background: rgb(14, 16, 131);
 }
 
 
@@ -150,6 +152,7 @@ body
        height: auto;
        padding: 20px;
        box-sizing: border-box; 
+       margin: 0 auto;
     }
     .projectContainer .box
     {
@@ -166,6 +169,7 @@ body
     .projectContainer
     {
        display: initial;
+       margin: 0 auto;
     }
     .projectContainer .box 
     {
@@ -181,6 +185,7 @@ body
        top: 0;
        left: 0;
        transform: translate(0);
+       margin: 0 auto;
     }
     .projectContainer .box 
     {
